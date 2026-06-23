@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height:100vh;
+        }
+        form{
+            margin: 20px;
+            width:400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+        }
+        form input{
+            margin: 20px;
+            width: 70%;
+            border-radius: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid gray;
+            padding: 20px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #btn{
+            background-color: blue;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        #btn:hover{
+            background-color: rgb(90, 133, 190);
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Register</h1>
+        <form method="POST" action="/register">
+        <input type="email" name="email" placeholder="Enter email" required>
+
+        <input type="text" name="username" placeholder="Enter username" required>
+        <input type="password" name="password" placeholder="Enter password" required>
+        <input type="submit" id="btn" placeholder="submit">
+    </form>
+    <p>Already have an account? <a href="/">login</a></p>
+    </div>
+</body>
+</html>
